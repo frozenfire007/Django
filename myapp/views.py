@@ -10,4 +10,6 @@ def root_page(request):
 
 def temp_inherit_home(request):
     return render(request, template_name="myapp/inherit_page.html")
+def portfolio(request):
+    return render(request, template_name="myapp/portfolio.html")
     
