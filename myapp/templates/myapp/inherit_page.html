@@ -17,7 +17,7 @@
           <ul class="navbar-nav mr-auto">
             
             <li class="nav-item active">
-                <a class="nav-link" href="#">ClassRoom<span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="{% url 'classroom' %}">ClassRoom<span class="sr-only">(current)</span></a>
              </li>
               <li class="nav-item active">
                 <a class="nav-link" href="#">Student<span class="sr-only">(current)</span></a>
@@ -49,6 +49,13 @@
           </form> {% endcomment %}
         </div>
       </nav>
-
+      <br>
+      <div class = "container">
+        {%block content%}
+      {% endblock %}
+    
+    
+      </div>
+      
 </body>
 </html>

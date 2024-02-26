@@ -1,0 +1,16 @@
+{% extends 'myapp/inherit_page.html' %}
+{%block content%}
+    <h1>
+        This is classroom page
+    </h1>
+    Name: {{classroom_name}} <br>
+    Address : {{location}}
+    <br>
+
+    {% for classroom in classrooms %} 
+        Name: {{ classroom.name}}<br>
+        Address : {{classroom.address}}<br>
+
+    {% endfor %}
+
+{% endblock %}
